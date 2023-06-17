@@ -3,7 +3,6 @@ plugins {
 }
 
 group "ru.netology"
-group "ru.netology.test"
 version "1.0-SNAPSHOT"
 
 
@@ -15,7 +14,7 @@ dependencies {
     testImplementation ("org.testng:testng:7.1.0")
 }
 
-test {
+tasks.test {
     useTestNG()
 }
 
