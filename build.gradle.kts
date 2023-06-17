@@ -1,19 +1,21 @@
 plugins {
-    id("java")
+    id 'java'
 }
 
-group = "ru.netology"
-version = "1.0-SNAPSHOT"
+group "ru.netology"
+group "ru.netology.test"
+version "1.0-SNAPSHOT"
+
+sourceConpatibility = 11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation 'org.testng:testng:7.3.0'
 }
 
-tasks.test {
-    useJUnitPlatform()
+test {
+    useTestNG()
 }
