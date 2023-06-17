@@ -2,10 +2,13 @@ package ru.netology.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.testng.Assert.*;
+
+import org.junit.jupiter.api.Test;
 import ru.netology.CashBackHack;
+import org.testng.annotations.Test;
 
 public class CashbackHackServiceTest {
-    @org.testng.annotations.Test
+    @Test
     public void testPurchase() {
 
         CashBackHack service = new CashBackHack();
