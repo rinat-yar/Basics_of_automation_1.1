@@ -1,11 +1,9 @@
 package ru.netology.test;
 
-import static org.testng.Assert.*;
-
 import ru.netology.CashBackHack;
 
 public class CashbackHackServiceTest {
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase() {
 
         CashBackHack service = new CashBackHack();
@@ -14,10 +12,10 @@ public class CashbackHackServiceTest {
         int expected = 500;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase_1() {
 
         CashBackHack service = new CashBackHack();
@@ -26,10 +24,10 @@ public class CashbackHackServiceTest {
         int expected = 999;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase_2() {
 
         CashBackHack service = new CashBackHack();
@@ -38,10 +36,10 @@ public class CashbackHackServiceTest {
         int expected = 1000;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase_3() {
 
         CashBackHack service = new CashBackHack();
@@ -50,10 +48,10 @@ public class CashbackHackServiceTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase_4() {
 
         CashBackHack service = new CashBackHack();
@@ -62,11 +60,11 @@ public class CashbackHackServiceTest {
         int expected = 1;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
 
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase_5() {
 
         CashBackHack service = new CashBackHack();
@@ -75,10 +73,10 @@ public class CashbackHackServiceTest {
         int expected = 999;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testPurchase_6() {
 
         CashBackHack service = new CashBackHack();
@@ -87,7 +85,7 @@ public class CashbackHackServiceTest {
         int expected = 0;
         int actual = service.remain(amount);
 
-        assertEquals(actual, expected);
+        org.junit.Assert.assertEquals(actual, expected);
     }
 }
 
