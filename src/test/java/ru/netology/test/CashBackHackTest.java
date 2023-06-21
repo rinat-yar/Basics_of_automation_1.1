@@ -1,6 +1,6 @@
 package ru.netology.test;
 
-import 
+import ru.netology.CashBackHack;
 public class CashBackHackTest {
     @org.junit.Test
     public void testForPurchaseOn1500() {
