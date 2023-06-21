@@ -7,7 +7,9 @@
 
 name: Java CI with Gradle
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [testing]
 
 jobs:
   build:
@@ -20,8 +22,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'
-          distribution: 'adopt'
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew test
+        run: ./gradlew test --info
