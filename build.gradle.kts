@@ -11,7 +11,9 @@ repositories {
 }
 
 dependencies {
-    testImplementation ("org.testng:testng:7.1.0")
+
+    testImplementation("org.testng:testng:7.1.0")
+
 }
 
 tasks.test {

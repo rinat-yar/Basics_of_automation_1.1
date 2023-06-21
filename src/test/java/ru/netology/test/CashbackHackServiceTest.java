@@ -5,6 +5,7 @@ import static org.testng.Assert.*;
 import ru.netology.CashBackHack;
 
 public class CashbackHackServiceTest {
+
     @org.testng.annotations.Test
     public void testPurchase() {
 
